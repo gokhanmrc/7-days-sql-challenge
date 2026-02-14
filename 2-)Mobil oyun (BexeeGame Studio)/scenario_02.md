@@ -1,4 +1,4 @@
-# 🎮 Day 2: Mobile Gaming Analytics (Epic-Game Studio)
+# 🎮 Day 2: Mobile Gaming Analytics (BexeeGame Studio)
 
 Bu çalışmada, "BexeeGame Studio" isimli kurgusal bir mobil oyun firmasının verileri üzerinde, oyun ekonomisini ve oyuncu davranışlarını anlamaya yönelik SQL analizleri gerçekleştirilmiştir.
 
