@@ -1,6 +1,6 @@
 # 🎮 Day 2: Mobile Gaming Analytics (Epic-Game Studio)
 
-Bu çalışmada, "Epic-Game Studio" isimli kurgusal bir mobil oyun firmasının verileri üzerinde, oyun ekonomisini ve oyuncu davranışlarını anlamaya yönelik SQL analizleri gerçekleştirilmiştir.
+Bu çalışmada, "BexeeGame Studio" isimli kurgusal bir mobil oyun firmasının verileri üzerinde, oyun ekonomisini ve oyuncu davranışlarını anlamaya yönelik SQL analizleri gerçekleştirilmiştir.
 
 ## 📊 Veri Seti Yapısı
 Analizde birbirleriyle ilişkili 3 ana tablo kullanılmıştır:
