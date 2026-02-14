@@ -32,7 +32,4 @@ Gaming dünyasında verinin gücünü kullanarak şu sorulara yanıt aradık:
 
 ---
 
-## 📫 İletişim
-Analizler hakkında tartışmak veya iş birliği yapmak isterseniz bana ulaşabilirsiniz:
-* **LinkedIn:** [Senin LinkedIn Linkin]
-* **Portfolio:** [Varsa Web Siten]
+
