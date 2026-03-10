@@ -1,35 +1,60 @@
-# 🚀 7-Days SQL Challenge: Real-World Data Simulations
+# 🚀 SQL Analytics Portfolio: 7 Days & 7 Industries
 
-Bu depo (repository), 7 gün boyunca farklı sektörlerden (E-ticaret, Gaming, Fintech vb.) gerçek dünya senaryolarını modelleyerek hazırladığım SQL analizlerini içermektedir. Bir **Data Analyst** olarak amacım, sadece sorgu yazmak değil; veriden iş değeri (business value) üretecek içgörüler sağlamaktır.
-
-## 🛠️ Yetkinlik Seti
-Bu challenge boyunca aşağıdaki teknikleri yoğun olarak kullandım:
-* **Complex Joins & CTEs:** Tablolar arası karmaşık ilişkiler ve okunabilir sorgu yapıları.
-* **Window Functions:** Sıralama (Rank), kümülatif toplamlar ve zaman serisi analizleri.
-* **Data Segmentation:** CASE WHEN ile kullanıcı segmentasyonu (Whale, Low-Spender vb.).
-* **Performance Optimization:** Büyük veri setlerinde indeks dostu filtreleme ve sorgu maliyeti yönetimi.
+Bu depo, 7 gün süren yoğun bir SQL kampı kapsamında; 7 farklı sektörün (E-ticaret, Oyun, Bankacılık, İnsan Kaynakları, Lojistik ve Sağlık) gerçek dünya senaryolarına dayanan **70 adet karmaşık SQL sorgusunu** ve iş analizi çıktılarını içermektedir.
 
 ---
 
-## 📅 Challenge Takvimi
+## 👨‍💻 Hakkımda
+Ben **Gökhan Meriç**, 4 yıllık Real-Time Analyst (RTA) ve Workforce Planning tecrübesine sahip bir veri tutkunuyum. Operasyonel verimlilik, kapasite planlama ve performans metrikleri konusundaki saha tecrübemi, SQL'in teknik gücüyle birleştirerek "veriden değer üretme" yolculuğuma devam ediyorum.
 
-| Gün | Sektör | Odak Noktası | Temel Kazanım |
+---
+
+## 📂 Portfolyo İçeriği (Yol Haritası)
+
+Aşağıdaki tablo, her günün odaklandığı sektörü ve çözülen temel iş problemlerini özetlemektedir:
+
+| Gün | Sektör | Temel Analiz Odakları | Durum |
 | :--- | :--- | :--- | :--- |
-| **1. Gün** | E-Commerce | Satış & Stok Analizi | Sipariş dönüşüm oranları ve gelir tahmini. |
-| **2. Gün** | Mobile Gaming | User Retention & Monetization | Whale (Balina) analizi, DAU ve oyuncu segmentasyonu. |
-| **3. Gün** | *Yükleniyor...* | *Gelecek Senaryo* | *Gelecek Kazanım* |
+| **01** | **E-Commerce** | Temel Satış Analizleri, `GROUP BY` & `HAVING` Pratikleri | ✅ Tamamlandı |
+| **02** | **Mobile Gaming** | Retention (Bağlılık), LTV, ARPU ve Kullanıcı Davranışları | ✅ Tamamlandı |
+| **03** | **Fintech v1** | Para Transferleri, Hesap Bakiyeleri, Çoklu `JOIN` Yapıları | ✅ Tamamlandı |
+| **04** | **Supply Chain** | SLA İhlalleri, Stok Yönetimi, `CASE WHEN` Mantığı | ✅ Tamamlandı |
+| **05** | **HR & Workforce** | Turnover (İşten Ayrılma), Maaş Adaleti, `Window Functions` | ✅ Tamamlandı |
+| **06** | **Healthcare** | KVKK Maskeleme, Randevu Yoğunluk ve `Date Functions` | ✅ Tamamlandı |
+| **07** | **Banking v2** | **BÜYÜK FİNAL: Fraud Tespiti & RFM Analizi** | ⏳ Yükleniyor... |
 
 ---
 
-## 🎮 2. Gün Senaryosu: Epic-Game Studio Analizi
-Gaming dünyasında verinin gücünü kullanarak şu sorulara yanıt aradık:
-* **DAU & Session Analysis:** Günlük aktif kullanıcı sayısı ve ortalama oyun süreleri.
-* **Whale Identification:** Toplam harcaması yüksek olan VIP oyuncuların tespiti.
-* **Difficulty Curve:** Seviye (Level) bazlı zorluk analizi ve oyuncu kaybı noktaları.
-* **Hardware Insights:** Cihaz modellerine göre performans ve harcama ilişkisi.
+## 🛠️ Teknik Yetkinlikler (Technical Stack)
 
-> **Analist Notu:** "Sadece kodun çıktısına değil, o çıktının oyun ekonomisindeki karşılığına (örneğin: zorluk seviyesi düzenlemesi) odaklanılmıştır."
+Bu portfolyodaki projelerde aşağıdaki ileri seviye SQL teknikleri aktif olarak kullanılmıştır:
+
+* **İleri Seviye Filtreleme:** `HAVING`, `LIKE`, `IN`, `BETWEEN`.
+* **Karmaşık Join'ler:** `LEFT/RIGHT/INNER JOIN`, `SELF-JOIN` (Hiyerarşi Analizi).
+* **Analitik & Window Functions:** `RANK()`, `DENSE_RANK()`, `ROW_NUMBER()`, `PARTITION BY`.
+* **Veri Manipülasyonu:** `TO_CHAR`, `COALESCE`, `NULLIF`, `EXTRACT`, `STRING CONCAT`.
+* **İş Mantığı (Business Logic):** `CASE WHEN` ile dinamik KPI ve metrik oluşturma.
 
 ---
 
+## 📈 Örnek Analitik Senaryolar
+* **Churn Analizi:** "Son 30 gündür aktif olmayan kullanıcıların segmentasyonu."
+* **SLA Takibi:** "Teslimatı 5 günden uzun süren siparişlerin operasyonel darboğaz analizi."
+* **Maaş Adaleti:** "Departman ortalamasının altında kalan yüksek performanslı çalışanların tespiti."
+* **KVKK Maskeleme:** "Hassas hasta verilerinin (Telefon, İsim) raporlama için maskelenmesi."
 
+---
+
+## 📂 Klasör Yapısı
+Her günün klasörü (Örn: `Day_05_HR_Analytics`) içerisinde şunlar yer alır:
+1.  **Sorgu Senaryoları:** İlgili sektörün karşılaştığı 10 temel iş sorusu.
+2.  **SQL Çözümleri:** Optimize edilmiş, okunabilirliği yüksek SQL kodları.
+3.  **Analist Notları:** Veriden çıkarılan iş sonuçları ve operasyonel öneriler.
+
+---
+
+## 📫 İletişim
+Bu analizler veya veri dünyası hakkında konuşmak isterseniz bana ulaşabilirsiniz:
+
+* **LinkedIn:** [linkedin.com/in/gokhanmeric](https://linkedin.com/in/gokhanmeric)
+* **GitHub:** [@gokhan-meric]
