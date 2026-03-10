@@ -1,5 +1,5 @@
 # 📊 SQL Analytics Portfolio
-Bu portfolyo, bir veri analistinin farklı iş alanlarının problemlerine SQL ile nasıl yaklaşması gerektiğini gösteren; **Gaming, CRM, Fintech, E-Commerce, HR ve Healthcare** sektörlerine ait 60 adet derinlemesine vaka analizini içermektedir.
+Bu portfolyo, bir veri analistinin farklı sektörlerdeki iş problemlerine SQL ile nasıl çözüm ürettiğini gösteren; Gaming, Fintech, E-Commerce, CRM, HR ve Healthcare alanlarına ait 60 adet derinlemesine vaka analizini içermektedir.
 
 ---
 
