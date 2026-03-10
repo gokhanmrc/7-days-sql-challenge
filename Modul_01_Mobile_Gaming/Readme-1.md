@@ -1,27 +1,28 @@
-# 🎮 Day 2: Mobile Gaming Analytics (BexeeGame Studio)
+# 🎮 Modül 01: Mobile Gaming Analytics (Bexee-Game Studio)
 
-Bu çalışmada, "BexeeGame Studio" isimli kurgusal bir mobil oyun firmasının verileri üzerinde, oyun ekonomisini ve oyuncu davranışlarını anlamaya yönelik SQL analizleri gerçekleştirilmiştir.
+Bu çalışma, bir mobil oyun firmasının oyun ekonomisini, oyuncu harcama alışkanlıklarını ve bağlılık metriklerini analiz etmek üzerine kurgulanmıştır. Bir Veri Analisti olarak temel amacım; ham oyun verisinden **Monetization (Gelir)** ve **Retention (Bağlılık)** içgörüleri üretmektir.
 
-## 📊 Veri Seti Yapısı
-Analizde birbirleriyle ilişkili 3 ana tablo kullanılmıştır:
-- **Oyuncular:** Demografik bilgiler ve cihaz modelleri.
-- **Oyun_Oturumlari:** Skor, seviye ve süre bazlı aktivite verileri.
-- **Satin_Almalar:** Oyun içi harcamalar ve işlem detayları.
+## 📊 Veri Seti Mimarisi
+Analiz, oyun içi ekosistemi temsil eden 3 ilişkili tablo üzerinden yürütülmüştür:
+- **Oyuncular:** Demografik veriler ve teknik donanım (Cihaz modelleri) bilgileri.
+- **Oyun_Oturumlari:** Aktivite süreleri, skorlar ve seviye bazlı etkileşim verileri.
+- **Satin_Almalar:** Mikro-işlemler (IAP) ve oyuncu harcama detayları.
 
-## 🎯 Analiz Odak Noktaları
-Bu simülasyonda bir Veri Analisti olarak şu kritik iş sorularına yanıt arandı:
-1. **Engagement (Etkileşim):** Günlük Aktif Kullanıcı (DAU) tespiti ve oturum başı ortalama süreler.
-2. **Monetization (Gelir):** Ülke bazlı toplam gelirler ve harcama yapan oyuncu sayıları.
-3. **Segmentation (Segmentasyon):** Harcama miktarlarına göre 'Free-to-Play', 'Low Spender' ve 'High Spender' (Whale) gruplandırması.
-4. **Behavioral Insights:** En değerli oyuncuların (Whales) hangi zorluk seviyelerinde ve hangi cihaz modellerinde yoğunlaştığının tespiti.
-5. **Loyalty (Sadakat):** Oyuncuların kayıt tarihinden itibaren geçen süreye göre sadakat analizi.
+## 🎯 Analitik Odak Noktaları & İş Soruları
+Bu modülde aşağıdaki kritik KPI'ların hesaplanması ve analizi gerçekleştirilmiştir:
 
-## 🛠️ Teknik Kazanımlar
-- **CTE (Common Table Expressions):** Karmaşık sorguları modüler ve okunabilir hale getirmek için kullanıldı.
-- **CASE WHEN:** Dinamik kullanıcı segmentasyonu ve etiketleme yapıldı.
-- **Aggregate Functions:** `SUM`, `AVG`, `COUNT(DISTINCT)` ile metrik hesaplamaları.
-- **Join Strategies:** Veri bütünlüğünü korumak adına `INNER JOIN` ve `LEFT JOIN` (NULL yönetimi ile) tercih edildi.
-- **Date Functions:** Zaman serisi analizi ve gün farkı hesaplamaları gerçekleştirildi.
+1.  **Engagement (Bağlılık) Analizi:** Günlük Aktif Kullanıcı (**DAU**) sayısının tespiti ve oturum başı ortalama sürelerin ölçümlenmesi.
+2.  **Monetization (Gelir Üretimi):** Ülke bazlı gelir dağılımı ve ödeme yapan kullanıcıların toplam kitleye oranı.
+3.  **Whale & Player Segmentation:** Oyuncuların harcama miktarlarına göre `Free-to-Play`, `Low Spender` ve `High Spender (Whale)` olarak sınıflandırılması.
+4.  **Behavioral Insights:** "Whale" olarak tanımlanan en değerli oyuncuların hangi oyun seviyelerinde (level) daha fazla vakit geçirdiğinin ve hangi cihazları tercih ettiğinin tespiti.
+5.  **Loyalty (Sadakat) Analizi:** Kayıt tarihinden itibaren geçen sürenin hesaplanarak "Sadık Oyuncu" kitlesinin belirlenmesi.
 
----
-*Bu çalışma, "7-Days SQL Challenge" kapsamında Gökhan Meriç tarafından hazırlanmıştır.*
+## 🛠️ Teknik Uygulamalar (SQL Stack)
+- **Advanced Aggregation:** `COUNT(DISTINCT)` ve `AVG` ile DAU ve etkileşim metrikleri.
+- **CTE (Common Table Expressions):** Karmaşık segmentasyon mantıklarını modüler ve okunabilir bloklara ayırma.
+- **Logical Branching:** `CASE WHEN` ile dinamik oyuncu segmentasyonu (Whale tespiti).
+- **Date Arithmetic:** `::DATE` dönüşümleri ve tarih farkları ile sadakat günü hesaplama.
+
+## 📈 Örnek Bulgular
+- Toplam harcaması 100 TL ve üzeri olan "Whale" oyuncuların büyük çoğunluğunun X cihaz modelini kullandığı ve 10. seviye üzerinde yoğunlaştığı gözlemlenmiştir.
+- Bu veriler ışığında, oyun içi tekliflerin (IAP) bu segmentteki oyuncuların bulunduğu seviyelere göre optimize edilmesi önerilmektedir.
