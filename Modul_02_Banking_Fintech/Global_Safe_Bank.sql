@@ -96,7 +96,7 @@ Soru-5:
 
 SELECT
     b.ad_soyad,
-    i.islem_tarihi, -- Hem tarih hem saat görünmeli
+    i.islem_tarihi, 
     i.tutar
 FROM Banka_Musterileri b
 INNER JOIN Kredi_Kartlari k ON b.musteri_id = k.musteri_id
@@ -197,6 +197,7 @@ INNER JOIN Banka_Musterileri b ON k.musteri_id = b.musteri_id
 INNER JOIN Islemler i ON k.kart_no = i.kart_no
 GROUP BY k.kart_no, b.ad_soyad
 ORDER BY top_harcama_tutari DESC;
+
 
 
 
