@@ -160,7 +160,7 @@ SELECT
    COUNT(hasta_id) AS hasta_sayisi
 FROM Hastalar
 GROUP BY soyad
-HAVING COUNT(hasta_id) > 1 -- Sadece potansiyel akrabaları/grupları listeler
+HAVING COUNT(hasta_id) > 1 
 ORDER BY hasta_sayisi DESC;
 
 /* 
@@ -212,6 +212,7 @@ SELECT
 FROM Randevular
 WHERE randevu_tarihi >= '2026-01-20' AND randevu_tarihi < '2026-01-21'; 
  
+
 
 
 
