@@ -1,5 +1,4 @@
-# 📊 SQL Analytics Portfolio: 6 Industry Verticals
-
+# 📊 SQL Analytics Portfolio
 Bu portfolyo, bir veri analistinin gerçek dünya iş problemlerine SQL ile nasıl yaklaşması gerektiğini gösteren; **Gaming, CRM, Fintech, E-Commerce, HR ve Healthcare** sektörlerine ait 60 adet derinlemesine vaka analizini içermektedir.
 
 ---
