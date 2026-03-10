@@ -57,7 +57,7 @@ SELECT
 FROM Oyuncular a
 INNER JOIN Oyun_Oturumlari b ON a.oyuncu_id = b.oyuncu_id
 GROUP BY 1
-HAVING COUNT(b.oturum_id) > 10 -- Bonus: Sadece anlamlı veri olan cihazları getir
+HAVING COUNT(b.oturum_id) > 10 
 ORDER BY ort_skor DESC;
 
 /* Soru 4: Balina (Whale) Analizi - Gelir Dağılımı 
@@ -70,8 +70,8 @@ SELECT
     b.ulke,
     SUM(a.tutar) AS top_harcama
 FROM Satin_Almalar a
-INNER JOIN Oyuncular b ON a.oyuncu_id = b.oyuncu_id -- Sadece kayıtlı oyuncuları getir
-GROUP BY b.takma_ad, b.ulke -- Gruplama tam ve net
+INNER JOIN Oyuncular b ON a.oyuncu_id = b.oyuncu_id 
+GROUP BY b.takma_ad, b.ulke 
 ORDER BY top_harcama DESC
 LIMIT 3;
 
@@ -113,7 +113,7 @@ Toplam harcaması 100 TL ve üzeri olanlar -> 'High Spender' */
 WITH Oyuncu_Harcama AS (
     SELECT
         a.takma_ad,
-        COALESCE(SUM(b.tutar), 0) AS net_harcama -- NULL'u burada halledelim
+        COALESCE(SUM(b.tutar), 0) AS net_harcama 
     FROM Oyuncular a
     LEFT JOIN Satin_Almalar b ON a.oyuncu_id = b.oyuncu_id
     GROUP BY a.takma_ad
@@ -122,7 +122,7 @@ SELECT
     takma_ad,
     net_harcama,
     CASE 
-        WHEN net_harcama = 0 THEN 'Free-to-Play' -- İşte şimdi oldu!
+        WHEN net_harcama = 0 THEN 'Free-to-Play' 
         WHEN net_harcama < 100 THEN 'Low Spender'
         ELSE 'High Spender'
     END AS gamer_title
@@ -177,3 +177,4 @@ GROUP BY b.seviye
 ORDER BY toplam_sure_dk DESC;
 	
 	
+
