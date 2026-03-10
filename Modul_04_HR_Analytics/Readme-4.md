@@ -7,7 +7,7 @@ Analiz, kurumsal hiyerarşiyi ve finansal verileri temsil eden 2 temel tablo üz
 - **Departmanlar:** Departman isimleri ve lokasyon bazlı tanımlamalar.
 
 ## 🎯 Analitik Odak Noktaları & İş Soruları
-Bu modülde bir WFM ve İK Analistinin yanıt araması gereken şu 5 kritik alana odaklanılmıştır:
+Bu modülde bir İK Analistinin yanıt araması gereken şu 5 kritik alana odaklanılmıştır:
 
 1.  **Turnover Rate (İşten Ayrılma Oranı):** Şirketin personel tutma başarısını ölçmek adına toplam çalışan ile işten ayrılanların oranlanması.
 2.  **Salary Equity (Maaş Adaleti):** `Window Functions` ve `Subqueries` kullanılarak, departman ortalamasının altında kalan ancak performansı yüksek (kıdemli) "underpaid" çalışanların tespiti.
