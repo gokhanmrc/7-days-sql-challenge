@@ -1,23 +1,29 @@
-# 📦 Day 4: Advanced E-Commerce & Supply Chain (Mega-Shop)
+# 📦 Modül 03: E-Commerce & Supply Chain Analytics (Mega-Shop)
 
-4. günde, "Trendy-Data" simülasyonu genişletilerek lojistik süreçler, stok yönetimi ve kategori bazlı performans analizleri üzerine yoğunlaşılmıştır.
+Bu çalışma, "Mega-Shop" e-ticaret platformunun satış performansını, lojistik süreçlerini ve stok verimliliğini analiz etmek üzerine kurgulanmıştır. Bir Veri Analisti olarak amacım; operasyonel darboğazları tespit etmek ve tedarik zinciri süreçlerini veriyle optimize etmektir.
 
-## 📊 Veri Seti Yapısı
-- **Musteriler:** Üyelik tipleri (Premium/Standard) ve demografik veriler.
-- **Urunler:** Kategori bilgileri, birim fiyatlar ve güncel stok adetleri.
-- **Siparisler:** Sipariş/Teslimat tarihleri ve iade durumlarını içeren operasyonel veriler.
+## 📊 Veri Seti Mimarisi
+Analiz, uçtan uca bir e-ticaret döngüsünü temsil eden 3 temel tablo üzerinden yürütülmüştür:
+- **Musteriler:** Üyelik tipleri (Premium/Standard) ve kayıt geçmişi.
+- **Urunler:** Kategori bilgileri, birim fiyatlar ve anlık stok adetleri.
+- **Siparisler:** Sipariş ve teslimat tarihleri, adetler ve iade durumlarını içeren işlem verileri.
 
-## 🎯 Analitik Odak Noktaları
-1. **Supply Chain (SLA):** Sipariş ve teslimat tarihleri arasındaki farklar üzerinden kargo performans analizi.
-2. **Inventory Management:** Kritik stok seviyelerinin (Kritik/Azalıyor/Yeterli) `CASE WHEN` ile dinamik takibi.
-3. **Financial Metrics:** Brüt ciro hesaplamaları ve iade oranlarının kategori bazlı dağılımı.
-4. **CRM Insights:** Üyelik tipi bazlı müşteri harcama alışkanlıkları ve kişi başı ortalama harcama tespiti.
-5. **Churn & Retention:** Kayıtlı olup henüz sipariş vermemiş "pasif" kitle analizi.
+## 🎯 Analitik Odak Noktaları & İş Soruları
+Bu modülde tedarik zinciri ve müşteri yaşam döngüsü yönetimi için şu 5 kritik alana odaklanılmıştır:
 
-## 🛠️ Teknik Kazanımlar
-- **Advanced Aggregation:** Tek bir sorguda `COUNT`, `SUM`, `AVG` ve `MAX` fonksiyonlarının bir arada kullanımı.
-- **Logical Branching:** `CASE WHEN` ile dinamik metrik etiketleme (Stok durumu, İade sayımı).
-- **Date Arithmetic:** Tarih farkları üzerinden operasyonel hız ölçümü.
-- **Complex Joins:** Üçlü tablo birleştirmeleriyle veri zenginleştirme.
+1.  **Supply Chain Efficiency (SLA):** Sipariş ve teslimat tarihleri arasındaki farklar üzerinden kargo performans analizi. 5 günü aşan gecikmelerin tespiti.
+2.  **Inventory Management (Stok Yönetimi):** Kritik stok seviyelerinin (Kritik/Azalıyor/Yeterli) `CASE WHEN` mantığı ile dinamik takibi ve stoksuzluk riskinin önlenmesi.
+3.  **Revenue & Returns:** Kategori bazlı brüt ciro hesaplamaları ve ürün iade oranlarının operasyonel maliyete etkisinin analizi.
+4.  **Churn & Inactivity (Pasif Müşteri):** Sisteme kayıtlı olup henüz ilk siparişini vermemiş "pasif" kullanıcıların segmentasyonu.
+5.  **Premium vs. Standard Analytics:** Üyelik tipine göre sepet ortalaması ve harcama alışkanlıklarının karşılaştırılması.
 
----
+## 🛠️ Teknik Uygulamalar (SQL Stack)
+- **Date Arithmetic:** `(s.teslim_tarihi - s.siparis_tarihi)` hesaplamaları ile lojistik hız ölçümü.
+- **Advanced Joins:** `LEFT JOIN` kullanarak sipariş vermeyen müşterilerin (NULL yönetimi) tespiti.
+- **Dynamic Labeling:** `CASE WHEN` ile stok ve fiyat bazlı ürün segmentasyonu.
+- **Sorting & Ranking:** En çok satılan ve en çok iade edilen ürünlerin `ORDER BY` ve `SUM` ile hiyerarşik listelenmesi.
+
+## 📈 Örnek Bulgular
+- Teslimatı 5 günü geçen siparişlerin belirli kategorilerde yoğunlaştığı tespit edilerek lojistik partner güncellenmesi önerilmiştir.
+- Stok seviyesi "Kritik" olan ürünler için otomatik tedarik alarmı kurgusu oluşturulmuştur.
+- "Premium" üyelerin, standart üyelere göre %X daha yüksek sepet ortalamasına sahip olduğu gözlemlenmiştir.
