@@ -17,7 +17,7 @@ Ben **Gökhan Meriç**. 4 yıllık **Workforce Management (WFM)** ve **Real-Time
 | **[Modül 03](./Modul_03_Supply_Chain)** | **E-Commerce & Supply Chain** | **SLA (Kargo Süresi) Analizi, Inventory Mgmt, Churn** | `Complex Joins`, `Date Diff` |
 | **[Modül 04](./Modul_04_HR_Analytics)** | **HR & Workforce** | **Turnover Rate, Salary Equity, Hierarchy Analysis** | `Window Functions`, `Self-Join` |
 | **[Modül 05](./Modul_05_Healthcare)** | **Healthcare** | **KVKK Masking, No-Show Rate, Capacity Planning** | `String Manipulation`, `Regex` |
-| **[Modül 06](./Modul_06_E-Commerce & CRM Analytics)** | **E-Commerce Essentials** | **Sales Performance, Customer Segmentation (RFM)** | `Aggregate Functions`, `Group By` |
+| **[Modül 06](./Modul_06_E-Copmmerce_&_CRM)** | **E-Commerce Essentials** | **Sales Performance, Customer Segmentation (RFM)** | `Aggregate Functions`, `Group By` |
 
 ---
 
