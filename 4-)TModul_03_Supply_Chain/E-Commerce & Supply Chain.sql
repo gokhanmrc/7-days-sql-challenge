@@ -223,3 +223,4 @@ ORDER BY toplam_ciro DESC;
 
 
 
+
