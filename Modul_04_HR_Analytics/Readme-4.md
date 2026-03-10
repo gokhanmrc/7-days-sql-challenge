@@ -1,7 +1,6 @@
 # 👥 Modül 04: HR & Workforce Analytics (Global-Talent Corp)
 
-Bu çalışma, bir insan kaynakları departmanının operasyonel verileri üzerinden; **Maaş Adaleti, Turnover (İşten Ayrılma) Analizi ve Organizasyonel Hiyerarşi** süreçlerini analiz etmek üzerine kurgulanmıştır. 4 yıllık **Workforce Management (WFM)** tecrübemi SQL'in analitik gücüyle birleştirerek, iş gücü verimliliğini artıracak içgörüler sundum.
-
+Bu çalışma, bir insan kaynakları departmanının operasyonel verileri üzerinden; **Maaş Adaleti, Turnover (İşten Ayrılma) Analizi ve Organizasyonel Hiyerarşi** süreçlerini analiz etmek üzerine kurgulanmıştır. 
 ## 📊 Veri Seti Mimarisi
 Analiz, kurumsal hiyerarşiyi ve finansal verileri temsil eden 2 temel tablo üzerinden yürütülmüştür:
 - **Calisanlar:** Maaş bilgileri, işe giriş tarihleri, çalışan durumu (Aktif/Ayrıldı) ve yönetici eşleşmeleri.
