@@ -1,60 +1,56 @@
-# 🚀 SQL Analytics Portfolio: 7 Days & 7 Industries
+# 📊 SQL Analytics Portfolio: 6 Industry Verticals
 
-Bu depo, 7 gün süren yoğun bir SQL kampı kapsamında; 7 farklı sektörün (E-ticaret, Oyun, Bankacılık, İnsan Kaynakları, Lojistik ve Sağlık) gerçek dünya senaryolarına dayanan **70 adet karmaşık SQL sorgusunu** ve iş analizi çıktılarını içermektedir.
+Bu portfolyo, bir veri analistinin gerçek dünya iş problemlerine SQL ile nasıl yaklaşması gerektiğini gösteren; **Gaming, CRM, Fintech, E-Commerce, HR ve Healthcare** sektörlerine ait 60 adet derinlemesine vaka analizini içermektedir.
 
 ---
 
 ## 👨‍💻 Hakkımda
-Ben **Gökhan Meriç**, 4 yıllık Real-Time Analyst (RTA) ve Workforce Planning tecrübesine sahip bir veri tutkunuyum. Operasyonel verimlilik, kapasite planlama ve performans metrikleri konusundaki saha tecrübemi, SQL'in teknik gücüyle birleştirerek "veriden değer üretme" yolculuğuma devam ediyorum.
+Ben **Gökhan Meriç**. 4 yıllık **Workforce Management (WFM)** ve **Real-Time Analysis** tecrübesine sahip bir veri tutkunuyum. Operasyonel verimlilik ve performans metrikleri konusundaki saha tecrübemi, SQL’in teknik gücüyle birleştirerek; ham veriyi stratejik kararları destekleyen "anlamlı iş sonuçlarına" dönüştürüyorum.
 
 ---
 
-## 📂 Portfolyo İçeriği (Yol Haritası)
+## 📂 Portfolyo İçeriği (Sektörel Vaka Analizleri)
 
-Aşağıdaki tablo, her günün odaklandığı sektörü ve çözülen temel iş problemlerini özetlemektedir:
-
-| Gün | Sektör | Temel Analiz Odakları | Durum |
+| Modül | Sektör | Temel Analitik Odaklar | Teknik Yetkinlikler |
 | :--- | :--- | :--- | :--- |
-| **01** | **E-Commerce** | Temel Satış Analizleri, `GROUP BY` & `HAVING` Pratikleri | ✅ Tamamlandı |
-| **02** | **Mobile Gaming** | Retention (Bağlılık), LTV, ARPU ve Kullanıcı Davranışları | ✅ Tamamlandı |
-| **03** | **Fintech v1** | Para Transferleri, Hesap Bakiyeleri, Çoklu `JOIN` Yapıları | ✅ Tamamlandı |
-| **04** | **Supply Chain** | SLA İhlalleri, Stok Yönetimi, `CASE WHEN` Mantığı | ✅ Tamamlandı |
-| **05** | **HR & Workforce** | Turnover (İşten Ayrılma), Maaş Adaleti, `Window Functions` | ✅ Tamamlandı |
-| **06** | **Healthcare** | KVKK Maskeleme, Randevu Yoğunluk ve `Date Functions` | ✅ Tamamlandı |
-| **07** | **Banking v2** | **BÜYÜK FİNAL: Fraud Tespiti & RFM Analizi** | ⏳ Yükleniyor... |
+| **[Modül 01](./Modul_01_Mobile_Gaming)** | **Mobile Gaming** | **DAU, Whale Analysis, Monetization, Loyalty** | `CTE`, `Date Trunc`, `Filtering` |
+| **[Modül 02](./Modul_02_Banking_Fintech)** | **Fintech & Banking** | **Fraud Detection, Risk Profiling, Limit Utilization** | `Subqueries`, `Logical CASE` |
+| **[Modül 03](./Modul_03_Supply_Chain)** | **E-Commerce & Supply Chain** | **SLA (Kargo Süresi) Analizi, Inventory Mgmt, Churn** | `Complex Joins`, `Date Diff` |
+| **[Modül 04](./Modul_04_HR_Analytics)** | **HR & Workforce** | **Turnover Rate, Salary Equity, Hierarchy Analysis** | `Window Functions`, `Self-Join` |
+| **[Modül 05](./Modul_05_Healthcare)** | **Healthcare** | **KVKK Masking, No-Show Rate, Capacity Planning** | `String Manipulation`, `Regex` |
+| **[Modül 06](./Modul_06_ECommerce)** | **E-Commerce Essentials** | **Sales Performance, Customer Segmentation (RFM)** | `Aggregate Functions`, `Group By` |
 
 ---
 
-## 🛠️ Teknik Yetkinlikler (Technical Stack)
+## 🚀 Öne Çıkan Analiz Örnekleri
 
-Bu portfolyodaki projelerde aşağıdaki ileri seviye SQL teknikleri aktif olarak kullanılmıştır:
+### 🎮 1. Gaming: Whale & Retention Analizi
+Oyuncuların harcama alışkanlıklarına göre segmentasyonu (`Free-to-Play` vs `High Spender`) ve en değerli oyuncuların (Whales) hangi zorluk seviyelerinde yoğunlaştığının tespiti.
+* **Kritik Sorgu:** En yüksek harcama yapan oyuncuların cihaz modelleri ve oyun skorları arasındaki korelasyon.
 
-* **İleri Seviye Filtreleme:** `HAVING`, `LIKE`, `IN`, `BETWEEN`.
-* **Karmaşık Join'ler:** `LEFT/RIGHT/INNER JOIN`, `SELF-JOIN` (Hiyerarşi Analizi).
-* **Analitik & Window Functions:** `RANK()`, `DENSE_RANK()`, `ROW_NUMBER()`, `PARTITION BY`.
-* **Veri Manipülasyonu:** `TO_CHAR`, `COALESCE`, `NULLIF`, `EXTRACT`, `STRING CONCAT`.
-* **İş Mantığı (Business Logic):** `CASE WHEN` ile dinamik KPI ve metrik oluşturma.
+### 💳 2. Fintech: Fraud & Risk Yönetimi
+Gelir düzeyi ile kredi kartı limiti arasındaki dengesizliklerin tespiti ve şüpheli işlem saatlerine (00:00 - 05:00) göre alarm mekanizması kurgulanması.
+* **Kritik Sorgu:** Müşteri geliri > 2x Limit olan riskli portföyün listelenmesi.
+
+### 👥 3. HR: Workforce Planning & Turnover
+WFM disipliniyle, departman bazlı "İşten Ayrılma Oranı" (Turnover) hesaplanması ve maaş adaleti için departman ortalamasının altında kalan yüksek performanslı çalışanların tespiti.
+* **Kritik Sorgu:** `Window Functions` ile her departman içindeki maaş sıralaması.
+
+### 🏥 4. Healthcare: KVKK & Operasyonel Verimlilik
+Hassas hasta verilerinin maskelenmesi (Data Masking) ve randevularına gelmeyen (No-Show) hastaların doktor performansına etkisinin ölçülmesi.
 
 ---
 
-## 📈 Örnek Analitik Senaryolar
-* **Churn Analizi:** "Son 30 gündür aktif olmayan kullanıcıların segmentasyonu."
-* **SLA Takibi:** "Teslimatı 5 günden uzun süren siparişlerin operasyonel darboğaz analizi."
-* **Maaş Adaleti:** "Departman ortalamasının altında kalan yüksek performanslı çalışanların tespiti."
-* **KVKK Maskeleme:** "Hassas hasta verilerinin (Telefon, İsim) raporlama için maskelenmesi."
+## 🛠️ Teknik Stack (Advanced SQL)
 
----
-
-## 📂 Klasör Yapısı
-Her günün klasörü (Örn: `Day_05_HR_Analytics`) içerisinde şunlar yer alır:
-1.  **Sorgu Senaryoları:** İlgili sektörün karşılaştığı 10 temel iş sorusu.
-2.  **SQL Çözümleri:** Optimize edilmiş, okunabilirliği yüksek SQL kodları.
-3.  **Analist Notları:** Veriden çıkarılan iş sonuçları ve operasyonel öneriler.
+Bu portfolyodaki projeler, sadece veri çekmek için değil, veri manipülasyonu ve optimizasyonu için şu teknikleri kullanır:
+* **Window Functions:** `RANK()`, `ROW_NUMBER()`, `PARTITION BY` ile derinlemesine gruplandırma.
+* **Complex Data Logic:** `CASE WHEN`, `COALESCE`, `NULLIF` ile kirli verinin temizlenmesi ve etiketlenmesi.
+* **Relational Mapping:** `Self-Joins` (Hiyerarşi için) ve `Multiple Joins` (Star Schema yapıları için).
+* **Optimization:** `CTE (With Clause)` kullanarak okunabilirliği yüksek, modüler sorgu mimarileri.
 
 ---
 
 ## 📫 İletişim
-Bu analizler veya veri dünyası hakkında konuşmak isterseniz bana ulaşabilirsiniz:
-
-* **LinkedIn:** [linkedin.com/in/gokhanmeric](https://linkedin.com/in/gokhanmeric)
-* **GitHub:** [@gokhan-meric]
+Bu analizler hakkında konuşmak veya yeni projelerde iş birliği yapmak isterseniz:
+* **LinkedIn:** [linkedin.com/in/gokhanmrc/](https://www.linkedin.com/in/gokhanmrc/)
