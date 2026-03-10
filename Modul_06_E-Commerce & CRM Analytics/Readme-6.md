@@ -1,6 +1,6 @@
 # 🛒 Modül 06: E-Commerce & CRM Analytics (Trendy-Data)
 
-Bu çalışma, "Trendy-Data" e-ticaret platformunun kullanıcı davranışlarını ve satış performansını analiz ederek; **Müşteri Segmentasyonu, Satış Trendleri ve CRM Stratejileri** geliştirmek üzerine kurgulanmıştır. Bir Veri Analisti olarak amacım; kullanıcıların satın alma alışkanlıklarını anlamak ve pazarlama bütçesinin en verimli şekilde kullanılmasını sağlayacak içgörüler üretmektir.
+Bu çalışma, "Trendy-Data" e-ticaret platformunun kullanıcı davranışlarını ve satış performansını analiz ederek; **Müşteri Segmentasyonu, Satış Trendleri ve CRM Stratejileri** geliştirmek üzerine kurgulanmıştır. Bir Veri Analisti olarak amacım; kullanıcıların satın alma alışkanlıklarını anlamak ve pazarlama bütçesinin en verimli şekilde kullanılmasını sağlayacak içgörüler üretmektir. 
 
 ## 📊 Veri Seti Mimarisi
 Analiz, müşteri etkileşimlerini temsil eden 2 temel tablo üzerinden yürütülmüştür:
