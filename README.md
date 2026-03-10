@@ -1,5 +1,5 @@
 # 📊 SQL Analytics Portfolio
-Bu portfolyo, bir veri analistinin ham veriyi stratejik iş kararlarına nasıl dönüştürdüğünü gösteren; Retention (Bağlılık), Churn & Inactivity, Loyalty, Whale (VIP) ve RFM Segmentasyonu gibi 60 adet derinlemesine analitik vaka çalışmasını içermektedir.
+Bu portfolyo, bir veri analistinin ham veriyi stratejik iş kararlarına nasıl dönüştürdüğünü gösteren; **Retention (Bağlılık), Churn & Inactivity, Loyalty, Whale (VIP) ve RFM Segmentasyonu** gibi 60 adet derinlemesine analitik vaka çalışmasını içermektedir.
 
 ---
 
