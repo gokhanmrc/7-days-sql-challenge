@@ -1,10 +1,10 @@
 # 📊 SQL Analytics Portfolio
-Bu portfolyo, bir veri analistinin gerçek dünya iş problemlerine SQL ile nasıl yaklaşması gerektiğini gösteren; **Gaming, CRM, Fintech, E-Commerce, HR ve Healthcare** sektörlerine ait 60 adet derinlemesine vaka analizini içermektedir.
+Bu portfolyo, bir veri analistinin farklı iş alanlarının problemlerine SQL ile nasıl yaklaşması gerektiğini gösteren; **Gaming, CRM, Fintech, E-Commerce, HR ve Healthcare** sektörlerine ait 60 adet derinlemesine vaka analizini içermektedir.
 
 ---
 
 ## 👨‍💻 Hakkımda
-Ben **Gökhan Meriç**. 4 yıllık **Workforce Management (WFM)** ve **Real-Time Analysis** tecrübesine sahip bir veri tutkunuyum. Operasyonel verimlilik ve performans metrikleri konusundaki saha tecrübemi, SQL’in teknik gücüyle birleştirerek; ham veriyi stratejik kararları destekleyen "anlamlı iş sonuçlarına" dönüştürüyorum.
+Ben **Gökhan Meriç**. 4 yıllık **Workforce Management (WFM)** ve **Real-Time Analysis** tecrübesine sahip bir veri analistiyim. Operasyonel verimlilik ve performans metrikleri konusundaki saha tecrübemi, SQL’in teknik gücüyle birleştirerek; ham veriyi stratejik kararları destekleyen "anlamlı iş sonuçlarına" dönüştürüyorum.
 
 ---
 
